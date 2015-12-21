@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <script src="http://code.angularjs.org/1.4.7/angular.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet"  href="style.css" >
+
+    </head>
+
+    <body  ng-app="myMod">
+        <div id="wrapper">
+            <header>
+                <div id="title-main">Six Year Old Simulator</div>
+            	<ul>
+
+            	</ul>
+            </header>
+            <main>
+                <div class="container"  ng-controller="myCtrl">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h3>Button 1</h3>
+                            <button class="btn btn-primary btn-lg" ng-click="addUndecoratedWord()">Words</button>
+                        </div>
+                        <div class="col-md-3">
+                            <h3>Button 2</h3>
+                            <button class="btn btn-primary btn-lg" ng-click="addDecoratedWord()">Words with Decoration</button>
+                        </div>
+                        <div class="col-md-3">
+                            <h3>Button 3</h3>
+                            <button class="btn btn-primary btn-lg" ng-click="addRandomStyle()">Random Styles</button>
+                        </div>
+                        <div class="col-md-3">
+                            <h3>Button 4</h3>
+                            <button class="btn btn-primary btn-lg" ng-click="talk()">Talk</button>
+                        </div>
+                    </div>
+                    <div class="row row2" >
+                        <div class="col-md-6 list-of-words">
+                            <h3></h3>
+                            <span ng-repeat="element in wordsOnPage track by $index" class="ng-class: {{element.decor}}">{{element.word}}</span>
+                        </div>
+                        <div class="col-md-6">
+                            <h3></h3>
+                    
+                        </div>
+                    </div>  
+                </div>
+            </main>
+            <footer>
+                
+            </footer>
+        </div>
+		<script src="script.js"> </script>
+    </body>
+</html>

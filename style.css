@@ -1,0 +1,133 @@
+/*======================
+========Font==========
+=======================*/
+
+#title-main{
+	font-size: 2em;
+	color: #fff;
+	margin: 1em 1em;
+}
+
+/*======================
+========GLOBAL==========
+=======================*/
+#wrapper{
+
+
+}
+
+main{
+	margin:3em .5em .5em  .5em;
+	background-color: #A5E7F7
+}
+
+body{
+	width:1280px;
+	background-color: lightgrey;
+	margin:0 auto;
+	text-align: center;
+}
+
+
+/*======================
+========HEADER==========
+=======================*/
+
+header{
+	height:120px;
+	border:thin black solid;
+	background-color: #286090;
+}
+
+
+/*======================
+========MAIN==========
+=======================*/
+
+.col-md-3{
+	/*border:solid black thin;*/
+}
+
+.row{
+	margin-top:2em;
+}
+
+li{
+	list-style: none;
+	display: inline-block;
+}
+.row2{
+
+height: 200px;
+}
+
+/*======================
+========NG-Classes======
+=======================*/
+.blue{
+	background-color: blue;
+	color:#fff;
+}
+
+.red{
+	font-family: Tahoma;
+	font-size: 2.3em;
+	color:red;
+	background-color: gold;
+}
+.yellow{
+	color:yellow;
+	background-color: green;
+
+}
+
+.font{
+	font-family: Georgia;
+	font-size: 3.5em;
+	font-stretch: ultra-expanded;
+	font-style: italic;
+}
+
+.underlined{
+	text-decoration: underline;
+	font-size: 1.5em;
+}
+.square {
+	width: 50px;
+	height: 50px;
+	background: green;
+}
+
+
+
+.spin {
+
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 40000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 40000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 40000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform:rotate(0deg);
+  }
+
+  to {
+    -webkit-transform:rotate(360deg);
+  }
+}
+
+
+
+/*======================
+==MEDIA QUERIES=========
+=======================*/
